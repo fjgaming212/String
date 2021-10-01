@@ -13,8 +13,8 @@ select = " "
 
 docs = """Generate your Telegram String Session
 
-P -->> Pyrogram [https://docs.pyrogram.org]
-T -->> Telethon [https://docs.telethon.dev]
+P -->> Pyrogram (Bot Music) [https://docs.pyrogram.org]
+T -->> Telethon (Userbot)   [https://docs.telethon.dev]
 """
 
 tutor = """
@@ -26,7 +26,7 @@ tutor = """
 """
 
 template = """
-Thank you for Support Geez Projects
+Thank you for Support @FJ_GAMING
             
 <code>STRING_SESSION</code>: <code>{}</code>
 
