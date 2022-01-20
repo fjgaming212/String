@@ -26,7 +26,7 @@ tutor = """
 """
 
 template = """
-Thank you for Support @FJ_GAMING
+Thank you for Support @Farizsj
             
 <code>STRING_SESSION</code>: <code>{}</code>
 
@@ -35,25 +35,7 @@ Thank you for Support @FJ_GAMING
 
 print(docs)
 
-while select != ("p", "t"):
-    select = input("Enter your required client < p / t > : ").lower()
-    if select == "t":
-        print("""\nTelethon selected\nRunning script...""")
-        time.sleep(1)
-        print(tutor)
-        API_KEY = int(input("Enter API_KEY here: "))
-        API_HASH = input("Enter API_HASH here: ")
 
-        with TelegramClient(StringSession(), API_KEY, API_HASH) as client:
-            session_string = client.session.save()
-            saved_messages_template = "Telethon session" + template.format(session_string)
-            print("\nGenerating String Session...\n")
-            client.send_message("me", saved_messages_template, parse_mode="html")
-            time.sleep(1)
-            print("Your STRING_SESSION value have been sent to your Telegram Saved Messages")
-        break
-
-    elif select == "p":
         print("""\nPyrogram selected.\nRunning script...""")
         time.sleep(1)
         print(tutor)
@@ -68,6 +50,3 @@ while select != ("p", "t"):
             print("Your STRING_SESSION value have been sent to your Telegram Saved Messages")
         break
     
-    else:
-        print("\nPlease only select P or T\n")
-        time.sleep(1.5)
